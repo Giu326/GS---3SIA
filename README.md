@@ -1,13 +1,13 @@
-Documentação 
+# MooodTrack 
 
 ## Descrição
 
 O aplicativo MoodTrack foi desenvolvido com o objetivo de acompanhar o bem-estar emocional do usuário e auxiliar na realização de pequenas tarefas diárias.
 
 O aplicativo combina três funcionalidades:
-- Checklist Diário: Para realização de ações simples no dia a dia.
-- Registro de acontecimentos do cotidiano: Para registrar pensamentos, reflexões e acontecimentos.
-- Listagem dos registros: Para que o usuário possa acompanhar as emoções e os sentimentos ao longo dos dias.
+* Checklist Diário: Para realização de ações simples no dia a dia.
+* Registro de acontecimentos do cotidiano: Para registrar pensamentos, reflexões e acontecimentos.
+* Listagem dos registros: Para que o usuário possa acompanhar as emoções e os sentimentos ao longo dos dias.
 
 O aplicativo foi feito para ser leve, intuitivo, simples de se usar e visualmente agradável para todas as faixas etárias, utilizando componentes simples e eficiente, o que garante uma experiência fluída.
 
@@ -79,11 +79,9 @@ Conta com componentes como AppBar, Buttons, Text...
 
 1. Instale o Flutter(3.19 ou superior)
 2. Abra o projeto no VSCode ou no Android Studio.
-3. No terminal, execute:
-   flutter pub get
+3. No terminal, execute: [pip](flutter pub get)
 4. Conecte um celular Android ou abra um emulador
-5. Rode
-   flutter run
+5. Rode [pip](flutter run)
 
 ## Tecnologias utilizadas e justificativas
 
@@ -101,12 +99,12 @@ Melhor usabilidade do usuário.
 ## Gerenciamento de Memória
 O MoodTrack utiliza algumas práticas para garantir eficiência e evitar desperdício de recursos durante a execução do aplicativo. As práticas são:
 
-- Uso adequado de Stateful e Stateless widgets
+**Uso adequado de Stateful e Stateless widgets**
 Os widgets foram estruturados de forma que apenas telas que necessitam de atualzações dinâmicas utilizem StatefulWidget, enquanto as telas estáticas utilizam de StatelessWidget, evitando reconstruções de telas desnecessárias e reduzindo o uso de memória.
 
-- Renderização eficiente com ListView.builder
+**Renderização eficiente com ListView.builder**
 Listas, como utilizadas pelo checklist e o diário de humor, usam ListView.builder, que renderiza apenas os itens visíveis na tela, evitando o carregamento de listas inteiras na memória ao mesmo tempo.
 
-- Minimização de rebuilds
+**Minimização de rebuilds**
 O aplicativo evita atualizações desnecessárias na interface por meio de organização adequada de estado e divisão lógica de widgets.
 
