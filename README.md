@@ -17,7 +17,7 @@ O aplicativo foi feito para ser leve, intuitivo, simples de se usar e visualment
 Responsável por iniciar o aplicativo  
 
 Funções:  
-- main() - Inicia o app
+- main() - Inicia o app  
   
 - MyApp() - Define o MaterialApp, tema e rotas.
 
@@ -93,14 +93,20 @@ flutter run
 
 ## Tecnologias utilizadas e justificativas
 
-- Flutter
-Possui interface nativa e intuitiva.
+- Flutter  
+Possui interface nativa e intuitiva.  
+Desenvolvimento multiplataforma.  
 
-- Dart
+- Dart  
 Linguagem moderna e simples.    
 Widgets performáticos.
 
-- Desing
+- SharedPreferences  
+API do Flutter.  
+Útil para armazenar dados de forma persistente e local no dispositivo.  
+Ideal para armazenar pequenos dados, como configurações do usuário, preferências e credenciais de login.
+
+- Design  
 Interface visual agradável e padronizada com tons claros.    
 Melhor usabilidade do usuário.
    
@@ -115,4 +121,7 @@ Listas, como utilizadas pelo checklist e o diário de humor, usam ListView.build
  
 **Minimização de rebuilds**  
 O aplicativo evita atualizações desnecessárias na interface por meio de organização adequada de estado e divisão lógica de widgets.
+
+**Armazenamento local com SharedPreferences**
+A tecnologia foi utilizada para armazenar campos simples como email e senha do usuário, além das ações concluídas na tela de checklist. Como o armazenamento é feito localmente no dispositivo, ele evitya a necessidade de manter grandes volumes de dados armazenados.
 
