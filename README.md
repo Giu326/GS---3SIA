@@ -1,6 +1,7 @@
 Documentação 
 
-Descrição
+## Descrição
+
 O aplicativo MoodTrack foi desenvolvido com o objetivo de acompanhar o bem-estar emocional do usuário e auxiliar na realização de pequenas tarefas diárias.
 
 O aplicativo combina três funcionalidades:
@@ -10,45 +11,71 @@ O aplicativo combina três funcionalidades:
 
 O aplicativo foi feito para ser leve, intuitivo, simples de se usar e visualmente agradável para todas as faixas etárias, utilizando componentes simples e eficiente, o que garante uma experiência fluída.
 
-Descrição das classes, funções e métodos 
+## Descrição das classes, funções e métodos 
 
-1. main.dart
+1.main.dart
 Responsável por iniciar o aplicativo
 
 Funções:
 main() - Inicia o app
 MyApp() - Define o MaterialApp, tema e rotas.
 
-2. login_screen
-Responsável pelo login e acesso ao aplicativo
+2.login_screen.dart
+Responsável pelo login e acesso ao aplicativo.
 
 Funções:
+login() - Chamado quando o botão de login for clicado.
+Sua função é permitir o acesso do usuário ao aplicativo com a validação das informações armazenadas no SharedPreferences.
+
+mostrarMensagem() - Chamado quando for verificado se os campos coincidem com o que é pedido, após clicar no botão de cadastrar.
+Sua função é a exibição de uma mensagem no canto inferior da tela.
+
+build() - Exibir a interface da tela.
+Conta com componentes como TextField, ElevatedButton, Icon...
 
 
-3. home_screen
-Tela inicial do aplicativo
+3.register_screen.dart
+Responsável pelo cadastro do usuário no aplicativo.
+
+Fuunções:
+cadastrar() - Chamado quando o usuário clica no botão cadastrar.
+Sua função é validação dos campos e armazenamento local no SharedPreferences.
+
+mostrarMensagem() - Chamado quando for verificado se os campos coincidem com o que é pedido, após clicar no botão de login.
+Sua função é a exibição de uma mensagem no canto inferior da tela.
+
+build() - Exibir a interface da tela .
+Conta com componentes como TextField, ElevatedButton, Icon...
+
+
+4.home_screen.dart
+Tela inicial do aplicativo.
 
 Funções:
-build() - Exibe a interface com os widgets
+build() - Exibe a interface com os widgets.
+Conta com AppBar, Text, Buttons...
 
-4. diario_humor_screen.dart
-Tela responsável pela registro e pela listagem registros feito
+5.diario_screen.dart
+Tela responsável pelo registro e pela listagem dos registros feito.
 
 Funções:
-selectEmoji(emoji) - Seleciona um emoji
-saveEntry() - Registra o humor do dia
+buildMoodIcon(emoji) - Seleciona um emoji quando este for clicado.
+Responsável por gerenciar os ícones de humor disponiveis.
+
+addEntry() - Chamado quando o usuário clica no botão salvar.
+Método responsável por salvar os registros feitos.
+
 build() - Exibe a interface da tela com os registros, campo de texto, emojis...
+Conta com componentes como Icons, TextField, Buttons...
 
-6. checklist_screen.dart
-Tela responsável pela lista de ações
+6.tips_screen.dart
+Tela responsável pela lista de ações.
 
 Funções:
-addTask() - Adiciona uma ação 
-toggleTask() - Marca/desmarca uma ação como realizada
-removeTask() - Deleta a ação selecionada
-build() - Exibe a interface da tela com ListView.builder.
+build() - Constrói e exibe a interface da tela com ListView.builder.
+Conta com componentes como AppBar, Buttons, Text...
 
-Como executar o aplicativo
+## Como executar o aplicativo
 
 1. Instale o Flutter(3.19 ou superior)
 2. Abra o projeto no VSCode ou no Android Studio.
@@ -71,7 +98,7 @@ Widgets performáticos
 Interface visual agradável e padronizada com tons claros.
 Melhor usabilidade do usuário.
    
-Gerenciamento de Memória
+## Gerenciamento de Memória
 O MoodTrack utiliza algumas práticas para garantir eficiência e evitar desperdício de recursos durante a execução do aplicativo. As práticas são:
 
 1.Uso adequado de Stateful e Stateless widgets
