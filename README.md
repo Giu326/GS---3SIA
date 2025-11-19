@@ -13,77 +13,81 @@ O aplicativo foi feito para ser leve, intuitivo, simples de se usar e visualment
 
 ## Descrição das classes, funções e métodos 
 
-1.main.dart  
-Responsável por iniciar o aplicativo
-
-Funções:
-main() - Inicia o app
-MyApp() - Define o MaterialApp, tema e rotas.
-
-2.login_screen.dart
-Responsável pelo login e acesso ao aplicativo.
-
-Funções:
-login() - Chamado quando o botão de login for clicado.
-Sua função é permitir o acesso do usuário ao aplicativo com a validação das informações armazenadas no SharedPreferences.
-
-mostrarMensagem() - Chamado quando for verificado se os campos coincidem com o que é pedido, após clicar no botão de cadastrar.
-Sua função é a exibição de uma mensagem no canto inferior da tela.
-
-build() - Exibir a interface da tela.  
-Conta com componentes como TextField, ElevatedButton, Icon...
-
-
-3.register_screen.dart  
-Responsável pelo cadastro do usuário no aplicativo.
-
-Fuunções:
-cadastrar() - Chamado quando o usuário clica no botão cadastrar.
-Sua função é validação dos campos e armazenamento local no SharedPreferences.
-
-mostrarMensagem() - Chamado quando for verificado se os campos coincidem com o que é pedido, após clicar no botão de login.  
-Sua função é a exibição de uma mensagem no canto inferior da tela.
-
-build() - Exibir a interface da tela .  
-Conta com componentes como TextField, ElevatedButton, Icon...
-
-
-4.home_screen.dart
-Tela inicial do aplicativo.
-
-Funções:
-build() - Exibe a interface com os widgets.  
-Conta com AppBar, Text, Buttons...
-
-5.diario_screen.dart  
-Tela responsável pelo registro e pela listagem dos registros feito.
-
-Funções:
-buildMoodIcon(emoji) - Seleciona um emoji quando este for clicado.
-Responsável por gerenciar os ícones de humor disponiveis.
-
-addEntry() - Chamado quando o usuário clica no botão salvar.
-Método responsável por salvar os registros feitos.
-
-build() - Exibe a interface da tela com os registros, campo de texto, emojis...
-Conta com componentes como Icons, TextField, Buttons...
-
-6.tips_screen.dart  
-Tela responsável pela lista de ações.
+**main.dart**  
+Responsável por iniciar o aplicativo  
 
 Funções:  
-build() - Constrói e exibe a interface da tela com ListView.builder.
-Conta com componentes como AppBar, Buttons, Text...
+main() - Inicia o app  
+MyApp() - Define o MaterialApp, tema e rotas.  
+
+**login_screen.dart**  
+Responsável pelo login e acesso ao aplicativo.  
+
+Funções:  
+login() - Chamado quando o botão de login for clicado.  
+Sua função é permitir o acesso do usuário ao aplicativo com a validação das informações armazenadas no SharedPreferences.  
+
+mostrarMensagem() - Chamado quando for verificado se os campos coincidem com o que é pedido, após clicar no botão de cadastrar.  
+Sua função é a exibição de uma mensagem no canto inferior da tela.  
+
+build() - Exibir a interface da tela.    
+Conta com componentes como TextField, ElevatedButton, Icon...  
+
+
+**register_screen.dart**  
+Responsável pelo cadastro do usuário no aplicativo.  
+
+Funções:    
+cadastrar() - Chamado quando o usuário clica no botão cadastrar.    
+Sua função é validação dos campos e armazenamento local no SharedPreferences.    
+
+mostrarMensagem() - Chamado quando for verificado se os campos coincidem com o que é pedido, após clicar no botão de login.  
+Sua função é a exibição de uma mensagem no canto inferior da tela.  
+
+build() - Exibir a interface da tela .  
+Conta com componentes como TextField, ElevatedButton, Icon...  
+
+
+**home_screen.dart**
+Tela inicial do aplicativo.  
+
+Funções:  
+build() - Exibe a interface com os widgets.  
+Conta com AppBar, Text, Buttons...  
+
+**diario_screen.dart**  
+Tela responsável pelo registro e pela listagem dos registros feito.  
+
+Funções:  
+buildMoodIcon(emoji) - Seleciona um emoji quando este for clicado.  
+Responsável por gerenciar os ícones de humor disponiveis.  
+
+addEntry() - Chamado quando o usuário clica no botão salvar.  
+Método responsável por salvar os registros feitos.  
+
+build() - Exibe a interface da tela com os registros, campo de texto, emojis...  
+Conta com componentes como Icons, TextField, Buttons...  
+
+**tips_screen.dart**  
+Tela responsável pela lista de ações.  
+
+Funções:  
+build() - Constrói e exibe a interface da tela com ListView.builder.  
+Conta com componentes como AppBar, Buttons, Text...  
 
 ## Como executar o aplicativo
 
 1. Instale o Flutter(3.19 ou superior)
 2. Abra o projeto no VSCode ou no Android Studio.
 3. No terminal, execute:
-´´´flutter pub get
-´´´
+```
+flutter pub get
+```
 5. Conecte um celular Android ou abra um emulador
-6. Rode [pip](flutter run)
+6. Rode:
+```
+flutter run
+``` 
 
 ## Tecnologias utilizadas e justificativas
 
