@@ -17,20 +17,21 @@ O aplicativo foi feito para ser leve, intuitivo, simples de se usar e visualment
 Responsável por iniciar o aplicativo  
 
 Funções:  
-main() - Inicia o app  
-MyApp() - Define o MaterialApp, tema e rotas.  
+- main() - Inicia o app
+  
+- MyApp() - Define o MaterialApp, tema e rotas.  
 
 **login_screen.dart**  
 Responsável pelo login e acesso ao aplicativo.  
 
 Funções:  
-login() - Chamado quando o botão de login for clicado.  
+- login() - Chamado quando o botão de login for clicado.  
 Sua função é permitir o acesso do usuário ao aplicativo com a validação das informações armazenadas no SharedPreferences.  
 
-mostrarMensagem() - Chamado quando for verificado se os campos coincidem com o que é pedido, após clicar no botão de cadastrar.  
+- mostrarMensagem() - Chamado quando for verificado se os campos coincidem com o que é pedido, após clicar no botão de cadastrar.  
 Sua função é a exibição de uma mensagem no canto inferior da tela.  
 
-build() - Exibir a interface da tela.    
+- build() - Exibir a interface da tela.    
 Conta com componentes como TextField, ElevatedButton, Icon...  
 
 
@@ -38,13 +39,13 @@ Conta com componentes como TextField, ElevatedButton, Icon...
 Responsável pelo cadastro do usuário no aplicativo.  
 
 Funções:    
-cadastrar() - Chamado quando o usuário clica no botão cadastrar.    
+- cadastrar() - Chamado quando o usuário clica no botão cadastrar.    
 Sua função é validação dos campos e armazenamento local no SharedPreferences.    
 
-mostrarMensagem() - Chamado quando for verificado se os campos coincidem com o que é pedido, após clicar no botão de login.  
+- mostrarMensagem() - Chamado quando for verificado se os campos coincidem com o que é pedido, após clicar no botão de login.  
 Sua função é a exibição de uma mensagem no canto inferior da tela.  
 
-build() - Exibir a interface da tela .  
+- build() - Exibir a interface da tela .  
 Conta com componentes como TextField, ElevatedButton, Icon...  
 
 
@@ -52,27 +53,27 @@ Conta com componentes como TextField, ElevatedButton, Icon...
 Tela inicial do aplicativo.  
 
 Funções:  
-build() - Exibe a interface com os widgets.  
+- build() - Exibe a interface com os widgets.  
 Conta com AppBar, Text, Buttons...  
 
 **diario_screen.dart**  
 Tela responsável pelo registro e pela listagem dos registros feito.  
 
 Funções:  
-buildMoodIcon(emoji) - Seleciona um emoji quando este for clicado.  
+- buildMoodIcon(emoji) - Seleciona um emoji quando este for clicado.  
 Responsável por gerenciar os ícones de humor disponiveis.  
 
-addEntry() - Chamado quando o usuário clica no botão salvar.  
+- addEntry() - Chamado quando o usuário clica no botão salvar.  
 Método responsável por salvar os registros feitos.  
 
-build() - Exibe a interface da tela com os registros, campo de texto, emojis...  
+- build() - Exibe a interface da tela com os registros, campo de texto, emojis...  
 Conta com componentes como Icons, TextField, Buttons...  
 
 **tips_screen.dart**  
 Tela responsável pela lista de ações.  
 
 Funções:  
-build() - Constrói e exibe a interface da tela com ListView.builder.  
+- build() - Constrói e exibe a interface da tela com ListView.builder.  
 Conta com componentes como AppBar, Buttons, Text...  
 
 ## Como executar o aplicativo
