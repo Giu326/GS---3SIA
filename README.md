@@ -79,9 +79,11 @@ Conta com componentes como AppBar, Buttons, Text...
 
 1. Instale o Flutter(3.19 ou superior)
 2. Abra o projeto no VSCode ou no Android Studio.
-3. No terminal, execute: [pip](flutter pub get)
-4. Conecte um celular Android ou abra um emulador
-5. Rode [pip](flutter run)
+3. No terminal, execute:
+´´´flutter pub get
+```
+5. Conecte um celular Android ou abra um emulador
+6. Rode [pip](flutter run)
 
 ## Tecnologias utilizadas e justificativas
 
@@ -89,22 +91,22 @@ Conta com componentes como AppBar, Buttons, Text...
 Possui interface nativa e intuitiva
 
 - Dart
-Linguagem moderna e simples
+Linguagem moderna e simples  
 Widgets performáticos
 
 - Desing
-Interface visual agradável e padronizada com tons claros.
+Interface visual agradável e padronizada com tons claros.  
 Melhor usabilidade do usuário.
    
-## Gerenciamento de Memória
+## Gerenciamento de Memória  
 O MoodTrack utiliza algumas práticas para garantir eficiência e evitar desperdício de recursos durante a execução do aplicativo. As práticas são:
 
 **Uso adequado de Stateful e Stateless widgets**
 Os widgets foram estruturados de forma que apenas telas que necessitam de atualzações dinâmicas utilizem StatefulWidget, enquanto as telas estáticas utilizam de StatelessWidget, evitando reconstruções de telas desnecessárias e reduzindo o uso de memória.
 
-**Renderização eficiente com ListView.builder**
+**Renderização eficiente com ListView.builder**\  
 Listas, como utilizadas pelo checklist e o diário de humor, usam ListView.builder, que renderiza apenas os itens visíveis na tela, evitando o carregamento de listas inteiras na memória ao mesmo tempo.
-
-**Minimização de rebuilds**
+ 
+**Minimização de rebuilds**  
 O aplicativo evita atualizações desnecessárias na interface por meio de organização adequada de estado e divisão lógica de widgets.
 
