@@ -19,7 +19,8 @@ Responsável por iniciar o aplicativo
 Funções:  
 - main() - Inicia o app
   
-- MyApp() - Define o MaterialApp, tema e rotas.  
+- MyApp() - Define o MaterialApp, tema e rotas.
+
 
 **login_screen.dart**  
 Responsável pelo login e acesso ao aplicativo.  
