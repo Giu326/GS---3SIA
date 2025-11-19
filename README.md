@@ -85,28 +85,28 @@ Conta com componentes como AppBar, Buttons, Text...
 5. Rode
    flutter run
 
-Tecnologias utilizadas e justificativas
+## Tecnologias utilizadas e justificativas
 
-1.Flutter
+- Flutter
 Possui interface nativa e intuitiva
 
-2.Dart
+- Dart
 Linguagem moderna e simples
 Widgets performáticos
 
-3.Desing
+- Desing
 Interface visual agradável e padronizada com tons claros.
 Melhor usabilidade do usuário.
    
 ## Gerenciamento de Memória
 O MoodTrack utiliza algumas práticas para garantir eficiência e evitar desperdício de recursos durante a execução do aplicativo. As práticas são:
 
-1.Uso adequado de Stateful e Stateless widgets
+- Uso adequado de Stateful e Stateless widgets
 Os widgets foram estruturados de forma que apenas telas que necessitam de atualzações dinâmicas utilizem StatefulWidget, enquanto as telas estáticas utilizam de StatelessWidget, evitando reconstruções de telas desnecessárias e reduzindo o uso de memória.
 
-2.Renderização eficiente com ListView.builder
+- Renderização eficiente com ListView.builder
 Listas, como utilizadas pelo checklist e o diário de humor, usam ListView.builder, que renderiza apenas os itens visíveis na tela, evitando o carregamento de listas inteiras na memória ao mesmo tempo.
 
-3.Minimização de rebuilds
+- Minimização de rebuilds
 O aplicativo evita atualizações desnecessárias na interface por meio de organização adequada de estado e divisão lógica de widgets.
 
